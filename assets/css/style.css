@@ -1,0 +1,111 @@
+main{
+    height: 100vh;
+}
+
+aside{
+    height: 100%;
+    background-color: #FAFAFA;
+}
+
+aside p{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #00A0E6;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+aside p img{
+    width:50px;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside ul li{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    list-style: none;
+    padding: 25px;
+}
+
+aside ul li span{
+    font-weight: 400;
+}
+
+aside ul li:first-of-type{
+    font-weight: 400;
+    text-align:center;
+}
+
+aside img{
+    width:150px;
+    display: block;
+    margin: 0 auto;
+    padding: 120px 0 20px 0;
+}
+
+section{
+    position: relative;
+}
+
+section::after{
+    width: 85px;
+    height: 530px;
+    display: block;
+    background-color: #00A0E6;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+section div article{
+    height: 150px;
+}
+
+section div article:first-child{
+    background-color: red;
+}
+
+section div article:nth-child(2) p{
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A0E6;
+    margin: 20px auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+section div article:nth-child(2) ul{
+    background-color: #FAFAFA;
+    padding: 30px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+section div article:nth-child(2) ul li{
+    list-style: none;
+    font-weight: 400
+}
+
+section div article:nth-child(2) ul li ul li{
+    font-weight: 100;
+}
+
+section div article:last-child{
+    background-color: blue;
+}
