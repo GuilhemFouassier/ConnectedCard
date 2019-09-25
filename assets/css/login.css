@@ -3,6 +3,19 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+main::after{
+    width: 85px;
+    height: 530px;
+    display: block;
+    background-color: #00A0E6;
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    transform: rotate(45deg);
 }
 
 section img{
@@ -23,6 +36,7 @@ section form input[type=text]{
     background-color: #FAFAFA;
     border-radius: 10px;
     border: none;
+    padding: 0 0 0 10px;
 }
 
 section form input[type=submit]{
