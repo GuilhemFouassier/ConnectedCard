@@ -10,6 +10,7 @@ main{
 aside{
     height: 100%;
     background-color: #FAFAFA;
+    position: relative;
 }
 
 aside p{
@@ -56,8 +57,10 @@ aside ul li:first-of-type{
 aside img{
     width:150px;
     display: block;
-    margin: 0 auto;
-    padding: 120px 0 20px 0;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 section{
@@ -87,8 +90,13 @@ section div article{
     padding:0 15px;
 }
 
-section div article:first-child{
-    background-color: red;
+.calendar{
+    height: 100%;
+    overflow: hidden;
+}
+
+.calendar iframe{
+    height: 100%;
 }
 
 section div article:nth-child(2) p{
@@ -102,6 +110,59 @@ section div article:nth-child(2) p{
     padding: 0;
     font-family: 'Lato', sans-serif;
     color: white;
+}
+
+.slick-slider{
+    width: 100%;
+    height: 330px;
+    background-color: #FAFAFA;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slick-slider .slick-prev::before{
+    width: 15px;
+    height: 15px;
+    display: block;
+    content: '';
+    background-image: url(../img/left-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slick-slider .slick-next::before{
+    width: 15px;
+    height: 15px;
+    display: block;
+    content: '';
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slick-slider .slick-item ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slick-slider .slick-item div{
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    font-family: 'Lato', sans-serif;
+}
+
+.slick-slider .slick-item div ul li{
+    font-family: 'Lato', sans-serif;
 }
 
 section div article:nth-child(2) ul{
