@@ -1,0 +1,37 @@
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img{
+    width: 300px;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+section form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section form input[type=text]{
+    width: 400px;
+    height: 45px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    border: none;
+}
+
+section form input[type=submit]{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    border: none;
+    margin: 0 0 0 10px;
+}
